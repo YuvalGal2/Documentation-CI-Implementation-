@@ -238,8 +238,6 @@ before_script:
 # cp - from local gitlab runner to the /src folder which the apache will listen to
 # then at next stage run selenium test on global ip of the server.
 # this will provide consistent uptime even when not testing and test env at the same time
-# the only thing we need to set is the host file in apache server to prevent any(!!!) access to
-# production servers any extra layer of security can be limit the ips which can access this server
 # and the content which he serve.
 - cd /builds/$GITLAB_USER_LOGIN/$CI_PROJECT_NAME
 - pwd
